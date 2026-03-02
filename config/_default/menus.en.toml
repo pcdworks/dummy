@@ -1,0 +1,29 @@
+# -- Main Menu --
+# Single-page anchor navigation for HardTech Basecamp
+
+[[main]]
+  name = "Facilities"
+  url = "/#facilities"
+  weight = 1
+
+[[main]]
+  name = "Portfolio"
+  url = "/#portfolio"
+  weight = 2
+
+[[main]]
+  name = "Team"
+  pageRef = "/team/"
+  weight = 3
+
+[[main]]
+  name = "Contact"
+  url = "/#contact"
+  weight = 4
+
+# -- Footer Menu --
+
+[[footer]]
+  name = "PCDworks"
+  url = "https://pcdworks.com"
+  weight = 10

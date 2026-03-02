@@ -1,0 +1,33 @@
+# https://taskfile.dev
+
+version: '3'
+
+tasks:
+  default:
+    cmds:
+      - task: develop
+    silent: true
+
+  develop:
+    desc: 'Run hugo development server'
+    cmds:
+      - hugo server --bind 0.0.0.0 --baseURL http://localhost:1313 -D
+
+  build:
+    desc: 'Build the website for production'
+    cmds:
+      - hugo --minify
+
+  release:
+    desc: 'Clean and build the website for production release'
+    deps: [clean, build]
+
+  clean:
+    desc: 'Clean up build artifacts like public/ and resources/'
+    cmds:
+      - rm -rf public resources
+
+  preview:
+    desc: 'Serve the production build locally for preview'
+    cmds:
+      - hugo server --source . --port 8080

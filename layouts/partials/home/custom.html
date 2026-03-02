@@ -1,0 +1,254 @@
+{{/* HardTech Basecamp — Custom Homepage Layout */}}
+
+<!-- ==================== HERO ==================== -->
+{{ $banner := resources.Get "images/banner.jpg" }}
+{{ $banner = $banner | fingerprint }}
+<section id="hero" class="htb-hero" style="background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('{{ $banner.RelPermalink }}')">
+  <div class="htb-hero-inner">
+    <h1 class="htb-hero-headline">Build the Hard Stuff.</h1>
+    <p class="htb-hero-subheadline">De-Risk Your Hardware Startup.</p>
+    <p class="htb-hero-description">
+      A residential hardware incubator on 80 acres in East Texas — with 24/7 machine shops,
+      UL testing, living quarters, and 25 years of DFM expertise. Backed by PCDworks.
+    </p>
+    <div class="htb-hero-ctas">
+      <a href="/#contact" class="htb-btn htb-btn-primary">Contact Us</a>
+      <a href="#facilities" class="htb-btn htb-btn-secondary">Explore Facilities</a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== THE HARDTECH DIFFERENCE ==================== -->
+<section id="difference" class="htb-section">
+  <div class="htb-container">
+    <h2 class="htb-section-title">The HardTech Difference</h2>
+    <div class="htb-comparison">
+      <div class="htb-comparison-col htb-comparison-problem">
+        <h3>Standard Incubators</h3>
+        <ul>
+          <li>Shared desks and Wi-Fi — that's it</li>
+          <li>No prototyping facilities on-site</li>
+          <li>Outsourced manufacturing = slow iteration</li>
+          <li>No DFM expertise until it's too late</li>
+          <li>Commute to a coworking space daily</li>
+        </ul>
+      </div>
+      <div class="htb-comparison-col htb-comparison-solution">
+        <h3>The Basecamp Solution</h3>
+        <ul>
+          <li>24/7 machine shop & fabrication lab</li>
+          <li>UL pre-compliance testing on-site</li>
+          <li>Iterate from concept to DFM in days, not months</li>
+          <li>25 years of product-development expertise built in</li>
+          <li>Live on campus — zero commute, total immersion</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FACILITIES ==================== -->
+<section id="facilities" class="htb-section htb-section-alt">
+  <div class="htb-container">
+    <h2 class="htb-section-title">Facilities</h2>
+    <p class="htb-section-subtitle">80 acres of purpose-built infrastructure for hardware teams</p>
+    <div class="htb-grid">
+      <div class="htb-card">
+        <div class="htb-card-img-placeholder">
+          <span>Prototype Shop</span>
+        </div>
+        <p>Machining, engineering-grade 3D printing, and fabrication — go from sketch to prototype on-site.</p>
+      </div>
+      <div class="htb-card">
+        <div class="htb-card-img-placeholder">
+          <span>Testing Labs</span>
+        </div>
+        <p>Electronic circuit testing, prototype validation, and UL pre-compliance testing with NI LabVIEW instrumentation.</p>
+      </div>
+      <div class="htb-card">
+        <div class="htb-card-img-placeholder">
+          <span>Guest Rooms</span>
+        </div>
+        <p>Accommodations for up to 10 overnight guests. Live where you build — zero commute, total focus.</p>
+      </div>
+      <div class="htb-card">
+        <div class="htb-card-img-placeholder">
+          <span>Gym &amp; Game Room</span>
+        </div>
+        <p>Exercise space and game room to decompress between sprints.</p>
+      </div>
+      <div class="htb-card">
+        <div class="htb-card-img-placeholder">
+          <span>Meeting Studio</span>
+        </div>
+        <p>Conference space equipped for video calls, investor presentations, and design reviews.</p>
+      </div>
+      <div class="htb-card">
+        <div class="htb-card-img-placeholder">
+          <span>Video Studio</span>
+        </div>
+        <p>Dedicated recording studio for podcasts, product demos, and content production.</p>
+      </div>
+      <div class="htb-card">
+        <div class="htb-card-img-placeholder">
+          <span>On-Site Dining</span>
+        </div>
+        <p>Meals available on campus so your team stays fueled and focused.</p>
+      </div>
+      <div class="htb-card">
+        <div class="htb-card-img-placeholder">
+          <span>80-Acre Campus</span>
+        </div>
+        <p>80 secluded acres in the East Texas Piney Woods with walking paths and room to test at scale.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== PORTFOLIO / PROOF ==================== -->
+<section id="portfolio" class="htb-section">
+  <div class="htb-container">
+    <h2 class="htb-section-title">Proven Track Record</h2>
+    <p class="htb-section-subtitle">PCDworks has taken 90+ products from concept to manufacturing</p>
+    <div class="htb-grid htb-grid-3">
+      <div class="htb-card htb-card-project">
+        <div class="htb-card-icon">&#9881;</div>
+        <h3>Mars Rover Power Board</h3>
+        <p>Flight-qualified power management electronics for NASA JPL's Mars exploration program.</p>
+      </div>
+      <div class="htb-card htb-card-project">
+        <div class="htb-card-icon">&#9881;</div>
+        <h3>Linear Motor Subsea Valves</h3>
+        <p>Novel electromagnetic valve actuators for deep-sea oil & gas applications.</p>
+      </div>
+      <div class="htb-card htb-card-project">
+        <div class="htb-card-icon">&#9881;</div>
+        <h3>Black Water Recovery System</h3>
+        <p>Closed-loop water treatment technology. Winner of the Wall Street Journal Technology Award.</p>
+      </div>
+    </div>
+
+    <!-- Stats Bar -->
+    <div class="htb-stats">
+      <div class="htb-stat">
+        <span class="htb-stat-number">25</span>
+        <span class="htb-stat-label">Years</span>
+      </div>
+      <div class="htb-stat">
+        <span class="htb-stat-number">50+</span>
+        <span class="htb-stat-label">Companies</span>
+      </div>
+      <div class="htb-stat">
+        <span class="htb-stat-number">90</span>
+        <span class="htb-stat-label">Projects</span>
+      </div>
+      <div class="htb-stat">
+        <span class="htb-stat-number">30+</span>
+        <span class="htb-stat-label">Patents</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TEAM ==================== -->
+<section id="team" class="htb-section htb-section-alt">
+  <div class="htb-container">
+    <h2 class="htb-section-title">Backed by PCDworks</h2>
+    <p class="htb-section-subtitle">A multi-disciplinary engineering team with global sourcing connections</p>
+    <div class="htb-grid htb-grid-3">
+      <div class="htb-team-member">
+        <div class="htb-avatar-placeholder"></div>
+        <h3>Donna Rainone, AIA</h3>
+        <p>President</p>
+      </div>
+      <div class="htb-team-member">
+        <div class="htb-avatar-placeholder"></div>
+        <h3>Mike Rainone, DPDP, IDSA</h3>
+        <p>Vice President</p>
+      </div>
+      <div class="htb-team-member">
+        <div class="htb-avatar-placeholder"></div>
+        <h3>Bert Sackett, BSEE, MSEE</h3>
+        <p>Partner</p>
+      </div>
+    </div>
+    <div class="htb-section-cta">
+      <a href="/team/" class="htb-btn htb-btn-secondary">Meet the Team</a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CONTACT ==================== -->
+<section id="contact" class="htb-section">
+  <div class="htb-container">
+    <h2 class="htb-section-title">Get Started</h2>
+    <p class="htb-section-subtitle">Tell us about your project and we'll be in touch.</p>
+    <div class="htb-contact-grid">
+      <div class="htb-contact-form-wrap">
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact" />
+          <p class="htb-hidden">
+            <label>Don't fill this out: <input name="bot-field" /></label>
+          </p>
+          <div class="htb-form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="htb-form-group">
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company" />
+          </div>
+          <div class="htb-form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="htb-form-group">
+            <label for="stage">Project Stage</label>
+            <select id="stage" name="stage">
+              <option value="">Select one...</option>
+              <option value="idea">Idea / Concept</option>
+              <option value="prototype">Working Prototype</option>
+              <option value="pre-production">Pre-Production</option>
+              <option value="scaling">Scaling Manufacturing</option>
+            </select>
+          </div>
+          <div class="htb-form-group">
+            <label for="message">Tell us about your project</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="htb-btn htb-btn-primary htb-btn-full">Send Application</button>
+        </form>
+      </div>
+      <div class="htb-contact-info">
+        <h3>Visit Us</h3>
+        <p>
+          410 Private Rd 8315<br />
+          Palestine, TX 75803
+        </p>
+        <p>
+          <a href="tel:+19035492056">+1 (903) 549-2056</a><br />
+          <a href="mailto:support@hardtechbasecamp.com">support@hardtechbasecamp.com</a>
+        </p>
+        <h3>PCDworks</h3>
+        <p>
+          HardTech Basecamp is a program of
+          <a href="https://pcdworks.com" target="_blank" rel="noopener">PCDworks</a>,
+          a full-service product development firm with 25+ years of experience
+          bringing hardware from concept to market.
+        </p>
+        <div class="htb-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3000!2d-95.6166596!3d31.9742887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86485b9a9ae09d41%3A0xa90395cb43f7c587!2s410%20Private%20Rd%208315%2C%20Palestine%2C%20TX%2075803!5e0!3m2!1sen!2sus!4v1709330000000"
+            width="100%"
+            height="250"
+            style="border:0; border-radius:8px;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="HardTech Basecamp location">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

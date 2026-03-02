@@ -1,0 +1,50 @@
+{
+  "name": "website",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "image": "docker.io/hugomods/hugo:debian-exts-non-root",
+  "remoteUser": "hugo",
+  "containerEnv": {
+    "HUGO_ENV": "development"
+  },
+  "remoteEnv": {
+    "PATH": "${containerEnv:PATH}:/home/hugo/go/bin"
+  },
+  "forwardPorts": [
+    1313
+  ],
+  "portsAttributes": {
+    "1313": {
+      "label": "Hugo server"
+    }
+  },
+  "runArgs": [
+    "--init"
+  ],
+  "postCreateCommand": "bash ./.devcontainer/postCreateCommand.sh",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "github.copilot.enable": false,
+        "github.copilot.inlineSuggest.enable": false,
+        "github.copilot.chat.enabled": false,
+        "extensions.ignoreRecommendations": true,
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "terminal.integrated.profiles.linux": {
+          "bash": {
+            "path": "/usr/bin/bash"
+          }
+        }
+      },
+      "extensions": [
+        "budparr.language-hugo-vscode",
+        "esbenp.prettier-vscode",
+        "yzhang.markdown-all-in-one",
+        "DavidAnson.vscode-markdownlint",
+        "EditorConfig.EditorConfig",
+        "tamasfe.even-better-toml",
+        "google.geminicodeassist",
+        "task.vscode-task"
+      ]
+    }
+  }
+}
