@@ -1,8 +1,5 @@
-  {
-    "build": {
-      "env": {
-        "HUGO_VERSION": "0.151.0",
-        "GO_VERSION": "1.23"
-      }
-    }
+ {
+    "buildCommand": "curl -sSL https://go.dev/dl/go1.23.5.linux-amd64.tar.gz | tar -xz -C /tmp && curl -sSL https://github.com/gohugoio/hugo/releases/download/v0.154.5/hugo_extended_0.154.5_linux-amd64.tar.gz | tar -xz -C /tmp && export
+   PATH=/tmp:/tmp/go/bin:$PATH && hugo mod get -u && hugo --gc --minify -b \"https://$VERCEL_URL\"",
+    "outputDirectory": "public"
   }
