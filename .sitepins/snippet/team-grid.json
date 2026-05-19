@@ -1,0 +1,5 @@
+{
+  "label": "team-grid",
+  "schema": [],
+  "code": "{{< team-grid >}}\n{{< team-member name=\"Donna Rainone, AIA\" title=\"President\" >}}\n\n{{< team-member name=\"Mike Rainone, DPDP, IDSA\" title=\"Vice President\" >}}\n\n{{< team-member name=\"Bert Sackett, BSEE, MSEE\" title=\"Partner\" >}}\n{{< /team-grid >}}\n"
+}
